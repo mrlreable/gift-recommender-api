@@ -29,6 +29,11 @@ namespace RecommenderApi.Extensions
             builder.Services.AddOptions<DatabaseConfigurationOption>()
                 .Bind(builder.Configuration.GetSection(DatabaseConfigurationOption.SectionName))
                 .ValidateOnStart();
+
+            builder.Services.AddOptions<UrConfigurationOption>()
+                .Bind(builder.Configuration.GetSection(UrConfigurationOption.SectionName))
+                .ValidateOnStart()
+                .ValidateFluently();
         }
 
         public static void ConfigureJson(this WebApplicationBuilder builder)
