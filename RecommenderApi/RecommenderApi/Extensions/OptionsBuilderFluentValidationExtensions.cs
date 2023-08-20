@@ -1,9 +1,5 @@
 ﻿using FluentValidation;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
-using System.ComponentModel.DataAnnotations;
-using System.Diagnostics.CodeAnalysis;
-using ZstdSharp;
 
 namespace RecommenderApi.Extensions
 {

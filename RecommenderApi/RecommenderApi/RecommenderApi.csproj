@@ -20,8 +20,8 @@
 
   <ItemGroup>
     <Folder Include="Controllers\" />
-    <Folder Include="Dtos\" />
     <Folder Include="Filter\" />
+    <Folder Include="Model\" />
     <Folder Include="Services\" />
     <Folder Include="Profiles\" />
     <Folder Include="ViewModels\" />

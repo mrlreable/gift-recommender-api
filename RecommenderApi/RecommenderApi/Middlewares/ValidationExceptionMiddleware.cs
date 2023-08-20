@@ -1,4 +1,7 @@
-﻿namespace RecommenderApi.Middlewares
+﻿using FluentValidation;
+using RecommenderApi.Extensions;
+
+namespace RecommenderApi.Middlewares
 {
     public class ValidationExceptionMiddleware
     {
@@ -30,6 +33,12 @@
             {
                 // Call the original call.
                 await _next(httpContext);
+            }
+            catch (ValidationException ex)
+            {
+                httpContext.Response.StatusCode = 400;
+                var error = ex.ToProblemDetails();
+                await httpContext.Response.WriteAsJsonAsync(error);
             }
             catch (Exception ex)
             {

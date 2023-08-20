@@ -7,4 +7,11 @@
         public required string DatabaseName { get; init; }
         public required string CollectionName { get; init; }
     }
+
+    public class GiftRecommenderDatabaseSettings
+    {
+        public string ConnectionString { get; set; } = null!;
+        public string DatabaseName { get; set; } = null!;
+        public string CollectionName { get; set; } = null!;
+    }
 }

@@ -1,5 +1,4 @@
-﻿using RecommenderApi.Model;
-using RecommenderApi.Options;
+﻿using RecommenderApi.Options;
 using Serilog;
 using System.Text.Json.Serialization;
 
