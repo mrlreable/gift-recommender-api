@@ -1,4 +1,5 @@
 ﻿using RecommenderApi.Options;
+using RecommenderApi.Services;
 using Serilog;
 using System.Text.Json.Serialization;
 
@@ -33,6 +34,11 @@ namespace RecommenderApi.Extensions
                 .Bind(builder.Configuration.GetSection(UrConfigurationOption.SectionName))
                 .ValidateOnStart()
                 .ValidateFluently();
+        }
+
+        public static void AddRepositories(this WebApplicationBuilder builder)
+        {
+            builder.Services.AddTransient<IHarnessService, HarnessInputService>();
         }
 
         public static void ConfigureJson(this WebApplicationBuilder builder)
