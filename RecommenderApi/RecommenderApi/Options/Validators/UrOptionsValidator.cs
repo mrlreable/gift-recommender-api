@@ -2,7 +2,7 @@
 using FluentValidation;
 using RecommenderApi.Options;
 
-namespace RecommenderApi.Validation
+namespace RecommenderApi.Options.Validators
 {
     public class UrOptionsValidator : AbstractValidator<UrConfigurationOption>
     {

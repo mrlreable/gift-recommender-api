@@ -1,4 +1,6 @@
-﻿using RecommenderApi.Options;
+﻿using FluentValidation;
+using RecommenderApi.Options;
+using RecommenderApi.Options.Validators;
 using RecommenderApi.Services;
 using Serilog;
 using System.Text.Json.Serialization;
@@ -26,14 +28,18 @@ namespace RecommenderApi.Extensions
 
         public static void ValidateOptions(this WebApplicationBuilder builder)
         {
+            builder.Services.AddSingleton<IValidator<UrConfigurationOption>, UrOptionsValidator>();
+            builder.Services.AddSingleton<IValidator<DatabaseConfigurationOption>, DatabaseConfigurationOptionValidator>();
+
             builder.Services.AddOptions<DatabaseConfigurationOption>()
                 .Bind(builder.Configuration.GetSection(DatabaseConfigurationOption.SectionName))
+                .ValidateFluently()
                 .ValidateOnStart();
 
             builder.Services.AddOptions<UrConfigurationOption>()
                 .Bind(builder.Configuration.GetSection(UrConfigurationOption.SectionName))
-                .ValidateOnStart()
-                .ValidateFluently();
+                .ValidateFluently()
+                .ValidateOnStart();
         }
 
         public static void AddRepositories(this WebApplicationBuilder builder)
