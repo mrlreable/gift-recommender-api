@@ -44,7 +44,12 @@ namespace RecommenderApi.Extensions
 
         public static void AddRepositories(this WebApplicationBuilder builder)
         {
-            builder.Services.AddTransient<IHarnessService, HarnessInputService>();
+            builder.Services.AddScoped<IHarnessService, HarnessInputService>();
+        }
+
+        public static void HealthCheck(this WebApplicationBuilder builder)
+        {
+            builder.Services.AddHealthChecks();
         }
 
         public static void ConfigureJson(this WebApplicationBuilder builder)

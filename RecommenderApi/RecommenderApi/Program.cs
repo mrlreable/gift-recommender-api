@@ -1,3 +1,4 @@
+using Microsoft.Extensions.Diagnostics.HealthChecks;
 using RecommenderApi.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,6 +10,10 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
+
+// Health checks
+builder.HealthCheck();
+
 builder.ConfigureDatabase();
 builder.ConfigureLogger();
 builder.ConfigureJson();
@@ -23,7 +28,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+// Disable for now
+//app.UseHttpsRedirection();
 
 app.UseAuthorization();
 

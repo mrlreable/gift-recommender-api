@@ -13,9 +13,9 @@ namespace RecommenderApi.Controllers
         private readonly IConfiguration _configuration;
         private readonly ILogger _logger;
         private readonly IHarnessService _harnessService;
-        private readonly IValidator _validator;
+        private readonly IValidator<UrInputDto> _validator;
 
-        public HarnessController(IConfiguration configuration, ILogger logger, IHarnessService harnessService, IValidator validator)
+        public HarnessController(IConfiguration configuration, ILogger logger, IHarnessService harnessService, IValidator<UrInputDto> validator)
         {
             _configuration = configuration ?? throw new ArgumentNullException(nameof(configuration));
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));

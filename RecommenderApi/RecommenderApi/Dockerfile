@@ -9,4 +9,8 @@ RUN dotnet restore
 COPY . ./
 RUN dotnet publish -c Release -o /app/publish
 
+FROM mcr.microsoft.com/dotnet/sdk:7.0 AS final-env
+WORKDIR /app
+COPY --from=build /app/publish .
+
 ENTRYPOINT ["dotnet", "RecommenderApi.dll"]
