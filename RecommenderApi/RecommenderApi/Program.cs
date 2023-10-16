@@ -1,5 +1,5 @@
-using Microsoft.Extensions.Diagnostics.HealthChecks;
 using RecommenderApi.Extensions;
+using RecommenderApi.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -32,5 +32,6 @@ if (app.Environment.IsDevelopment())
 //app.UseHttpsRedirection();
 
 app.UseAuthorization();
+app.UseMiddleware<ExceptionMiddleware>();
 
 app.Run();

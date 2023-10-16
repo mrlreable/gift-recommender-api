@@ -28,5 +28,13 @@ namespace RecommenderApi.Controllers
         {
             throw new NotImplementedException();
         }
+
+        [HttpPost("input")]
+        public async Task<IActionResult> Input([FromBody] UrInputDto dto)
+        {
+            await _validator.ValidateAndThrowAsync(dto);
+
+            return Ok();
+        }
     }
 }

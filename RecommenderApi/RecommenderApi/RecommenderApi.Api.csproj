@@ -6,6 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>01625af1-7bc3-404b-bda1-1fb5676f0871</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -25,6 +26,10 @@
     <Folder Include="Model\" />
     <Folder Include="Profiles\" />
     <Folder Include="ViewModels\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RecommenderApi.Common\RecommenderApi.Common.csproj" />
   </ItemGroup>
 
   <ItemGroup>

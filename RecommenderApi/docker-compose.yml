@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  recommenderapi.api:
+    image: ${DOCKER_REGISTRY-}recommenderapiapi
+    build:
+      context: .
+      dockerfile: RecommenderApi/Dockerfile
