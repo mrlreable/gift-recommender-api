@@ -3,7 +3,7 @@ version: '3'
 services:
   
   recommender-api:
-    image: docker.io/library/recommenderapi
+    image: lanle99/gift-recommender-api:latest
     depends_on:
       - mongo
       - harness
@@ -11,8 +11,8 @@ services:
     ports:
       - "8088:80"
     build:
-      context: ./RecommenderApi/RecommenderApi/
-      dockerfile: Dockerfile
+      context: ./RecommenderApi
+      dockerfile: RecommenderApi/Dockerfile
     environment:
       - GiftRecommenderDatabase__ConnectionString=mongodb://+:27017
       - ASPNETCORE_URLS=http://+:80
@@ -39,6 +39,9 @@ services:
     image: mongo:4.2
     container_name: mongo
     command: --logappend --logpath=/tmp/mongod.log
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: POFPASDKNFAKkuiw539847bskdjf__SDfsdf
     ports:
       - "27017:27017"
     volumes:
