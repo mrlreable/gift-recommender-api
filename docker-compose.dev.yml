@@ -1,5 +1,21 @@
 version: '3'
+
 services:
+  
+  recommender-api:
+    image: docker.io/library/recommenderapi
+    depends_on:
+      - mongo
+      - harness
+    container_name: recommender-api
+    ports:
+      - "8088:80"
+    build:
+      context: ./RecommenderApi/RecommenderApi/
+      dockerfile: Dockerfile
+    environment:
+      - GiftRecommenderDatabase__ConnectionString=mongodb://+:27017
+      - ASPNETCORE_URLS=http://+:80
   
   harness:
     restart: always
