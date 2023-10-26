@@ -7,7 +7,7 @@ networks:
 services:
   
   recommender-api:
-    image: docker.io/library/recommenderapi
+    image: lanle99/gift-recommender-api:latest
     depends_on:
       - mongo
       - harness
@@ -15,7 +15,7 @@ services:
     ports:
       - "8088:80"
     build:
-      context: ./RecommenderApi/
+      context: ./RecommenderApi
       dockerfile: RecommenderApi/Dockerfile
     environment:
       - GiftRecommenderDatabase__ConnectionString=mongodb://+:27017

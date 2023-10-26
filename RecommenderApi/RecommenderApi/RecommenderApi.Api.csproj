@@ -25,7 +25,6 @@
     <Folder Include="Filter\" />
     <Folder Include="Model\" />
     <Folder Include="Profiles\" />
-    <Folder Include="ViewModels\" />
   </ItemGroup>
 
   <ItemGroup>
