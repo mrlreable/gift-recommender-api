@@ -42,9 +42,9 @@ namespace RecommenderApi.Extensions
                 .ValidateOnStart();
         }
 
-        public static void AddRepositories(this WebApplicationBuilder builder)
+        public static void RegisterServices(this WebApplicationBuilder builder)
         {
-            builder.Services.AddScoped<IHarnessService, HarnessInputService>();
+            builder.Services.AddScoped<IHarnessService, HarnessService>();
         }
 
         public static void HealthCheck(this WebApplicationBuilder builder)

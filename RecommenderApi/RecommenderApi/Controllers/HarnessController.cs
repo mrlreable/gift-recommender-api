@@ -36,5 +36,16 @@ namespace RecommenderApi.Controllers
 
             return Ok();
         }
+
+        [HttpGet("query/{userId}")]
+        public async Task<IResult> GetRecommendationForUser([FromRoute] string userId)
+        {
+            if (string.IsNullOrWhiteSpace(userId))
+            {
+                throw new ValidationException($"Route parameter {nameof(userId)} cannot be empty");
+            }
+
+
+        }
     }
 }
