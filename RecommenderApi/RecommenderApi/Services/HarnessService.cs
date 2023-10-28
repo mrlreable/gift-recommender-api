@@ -1,5 +1,7 @@
 ﻿using RecommenderApi.Api.ViewModels;
 using RecommenderApi.Dtos;
+using System.Text;
+using System.Text.Json;
 
 namespace RecommenderApi.Services
 {
@@ -19,9 +21,23 @@ namespace RecommenderApi.Services
             throw new NotImplementedException();
         }
 
-        public Task<RecommendationView> GetRecommendationsAsync(string userId)
+        public async Task<ICollection<RecommendationView>?> UserBasedQueryAsync(string userId)
         {
-            throw new NotImplementedException();
+            var client = _httpClientFactory.CreateClient();
+            var requestUri = "";
+            var body = new
+            {
+                UserId = userId,
+            };
+
+            var content = new StringContent(JsonSerializer.Serialize(body), Encoding.UTF8, "application/json");
+            var response = await client.PostAsync(requestUri, content);
+
+            response.EnsureSuccessStatusCode();
+
+            var stringRecommendations = await response.Content.ReadAsStringAsync();
+
+            return JsonSerializer.Deserialize<ICollection<RecommendationView>?>(stringRecommendations);
         }
     }
 }

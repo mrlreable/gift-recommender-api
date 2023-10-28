@@ -1,8 +1,12 @@
 ﻿using FluentValidation;
+using MongoDB.Bson;
+using MongoDB.Bson.Serialization;
+using MongoDB.Driver;
 using RecommenderApi.Options;
 using RecommenderApi.Options.Validators;
 using RecommenderApi.Services;
 using Serilog;
+using System.Reflection;
 using System.Text.Json.Serialization;
 
 namespace RecommenderApi.Extensions
@@ -50,6 +54,19 @@ namespace RecommenderApi.Extensions
         public static void HealthCheck(this WebApplicationBuilder builder)
         {
             builder.Services.AddHealthChecks();
+        }
+
+        public static void SeedMongo(this WebApplication app)
+        {
+            var dbConfig = app.Configuration.GetSection(DatabaseConfigurationOption.SectionName).Get<DatabaseConfigurationOption>();
+            var client = new MongoClient(dbConfig.ConnectionString);
+            var database = client.GetDatabase(dbConfig.DatabaseName);
+            var collection = database.GetCollection<BsonDocument>(dbConfig.CollectionName);
+
+            var data = File.ReadAllText(Path.Join(AppDomain.CurrentDomain.BaseDirectory, "Seed", "events.json"));
+            var documents = BsonSerializer.Deserialize<BsonDocument[]>(data);
+
+            collection.InsertMany(documents);
         }
 
         public static void ConfigureJson(this WebApplicationBuilder builder)

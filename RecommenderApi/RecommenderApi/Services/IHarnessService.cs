@@ -6,6 +6,6 @@ namespace RecommenderApi.Services
     public interface IHarnessService
     {
         public Task GenerateHarnessInputAsync(UrInputDto inputDto);
-        public Task<RecommendationView> GetRecommendationsAsync(string userId);
+        public Task<ICollection<RecommendationView>?> UserBasedQueryAsync(string userId);
     }
 }

@@ -1,9 +1,5 @@
 version: '3'
 
-networks:
-  prod:
-    driver: bridge
-
 services:
   
   recommender-api:
@@ -20,13 +16,13 @@ services:
     environment:
       - GiftRecommenderDatabase__ConnectionString=mongodb://+:27017
       - ASPNETCORE_URLS=http://+:80
-    networks:
-      - prod
   
   harness:
     restart: always
     image: actionml/harness:develop
     container_name: harness
+    ports:
+      - "9090:9090"
     environment:
       MONGO_URI: mongodb://mongo:27017
       HARNESS_URI: http://0.0.0.0:9090
@@ -37,22 +33,21 @@ services:
     volumes:
       - ${HARNESS_LOGS}:/harness/logs
       - ${HARNESS_DATA}:/data
-    networks:
-      - prod
       
   mongo:
     restart: always
     image: mongo:4.2
     container_name: mongo
-    command: --logappend --logpath=/tmp/mongod.log
+    command: [--auth] #--logappend --logpath=/tmp/mongod.log
     environment:
-      MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: POFPASDKNFAKkuiw539847bskdjf__SDfsdf
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_USER}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_PW}
+    ports:
+      - "27017:27017"
     volumes:
       - ${MONGO_LOGS}:/logs
       - ${MONGO_DATA}:/data/db
-    networks:
-      - prod
+      #- ${MONGO_INIT}:/docker-entrypoint-initdb.d/mongo-init.js:ro
 
   elasticsearch:
     restart: always
@@ -62,10 +57,10 @@ services:
       ES_JAVA_OPTS: ${ES_JAVA_OPTS}
       discovery.seed_hosts: elasticsearch
       discovery.type: single-node
+    ports:
+      - "9200:9200"
     volumes:
       - ${ES_DATA}:/usr/share/elasticsearch/data
-    networks:
-      - prod
 
   harness-cli:
     restart: always
@@ -74,9 +69,7 @@ services:
     environment:
         HARNESS_SERVER_ADDRESS: harness
     volumes:
-      - ${HARNESS_DATA}:/data
-    networks:
-      - prod
+    - ${HARNESS_DATA}:/data
 
   watchtower:
     restart: always
@@ -85,5 +78,3 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     command: --interval 3000
-    networks:
-      - prod

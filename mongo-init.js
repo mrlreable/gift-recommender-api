@@ -1,13 +1,22 @@
-db = db.getSiblingDB('gift-recommender')
+// Connect to the admin database
+db = db.getSiblingDB("admin");
 
-
+// Create a user with admin privileges for the specified database
 db.createUser({
-    user: 'admin',
-    pwd: 'POFPASDKNFAKkuiw539847bskdjf__SDfsdf',
-    roles: [
-      {
-        role: 'dbOwner',
-      db: 'gift-recommender',
+  user: "root",
+  pwd: "asdasd123",
+  roles: [
+    {
+      role: "clusterAdmin",
+      db: "admin"
     },
-  ],
+    {
+      role: "dbOwner",
+      db: "gift-recommender"
+    },
+    {
+      role: "readWrite",
+      db: "gift-recommender"
+    }
+  ]
 });

@@ -24,28 +24,33 @@ namespace RecommenderApi.Controllers
         }
 
         [HttpPost("upload")]
-        public async Task<IActionResult> InputFromFile([FromForm] FielUploadDto file)
+        public async Task<IResult> InputFromFile([FromForm] FielUploadDto file)
         {
             throw new NotImplementedException();
         }
 
         [HttpPost("input")]
-        public async Task<IActionResult> Input([FromBody] UrInputDto dto)
+        public async Task<IResult> Input([FromBody] UrInputDto dto)
         {
             await _validator.ValidateAndThrowAsync(dto);
 
-            return Ok();
+            // TODO
+            throw new NotImplementedException();
+
+            return Results.Ok();
         }
 
         [HttpGet("query/{userId}")]
-        public async Task<IResult> GetRecommendationForUser([FromRoute] string userId)
+        public async Task<IResult> GetUserBasedRecommendations([FromRoute] string userId)
         {
             if (string.IsNullOrWhiteSpace(userId))
             {
                 throw new ValidationException($"Route parameter {nameof(userId)} cannot be empty");
             }
 
+            var result = await _harnessService.UserBasedQueryAsync(userId);
 
+            return Results.Ok(result);
         }
     }
 }

@@ -11,6 +11,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
 builder.RegisterServices();
+builder.Services.AddHttpClient();
 
 // Health checks
 builder.HealthCheck();
@@ -21,6 +22,8 @@ builder.ConfigureJson();
 builder.ValidateOptions();
 
 var app = builder.Build();
+
+app.SeedMongo();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

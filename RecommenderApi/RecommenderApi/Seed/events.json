@@ -1,0 +1,10 @@
+[
+  {
+    "something": {
+      "anything": "nothing"
+    },
+    "anything": {
+      "nothing": "something"
+    }
+  }
+]

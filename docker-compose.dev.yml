@@ -37,17 +37,13 @@ services:
   mongo:
     restart: always
     image: mongo:4.2
-    container_name: mongo
-    command: --logappend --logpath=/tmp/mongod.log && mongod --auth
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: ${MONGO_USER}
-      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_PW}
+    container_name: mongodb
+    command: --logappend --logpath=/tmp/mongod.log
     ports:
       - "27017:27017"
     volumes:
       - ${MONGO_LOGS}:/logs
       - ${MONGO_DATA}:/data/db
-      - ${MONGO_ROOT}:/docker-entrypoint-initdb.d/mongo-init.js:ro
 
   elasticsearch:
     restart: always
@@ -57,8 +53,6 @@ services:
       ES_JAVA_OPTS: ${ES_JAVA_OPTS}
       discovery.seed_hosts: elasticsearch
       discovery.type: single-node
-    ports:
-      - "9200:9200"
     volumes:
       - ${ES_DATA}:/usr/share/elasticsearch/data
 
@@ -69,7 +63,7 @@ services:
     environment:
         HARNESS_SERVER_ADDRESS: harness
     volumes:
-    - ${HARNESS_DATA}:/data
+      - ${HARNESS_DATA}:/data
 
   watchtower:
     restart: always
