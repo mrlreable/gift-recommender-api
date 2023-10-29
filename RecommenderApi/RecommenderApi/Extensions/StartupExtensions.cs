@@ -61,10 +61,18 @@ namespace RecommenderApi.Extensions
             var dbConfig = app.Configuration.GetSection(DatabaseConfigurationOption.SectionName).Get<DatabaseConfigurationOption>();
             var client = new MongoClient(dbConfig.ConnectionString);
             var database = client.GetDatabase(dbConfig.DatabaseName);
-            var collection = database.GetCollection<BsonDocument>(dbConfig.CollectionName);
 
-            var data = File.ReadAllText(Path.Join(AppDomain.CurrentDomain.BaseDirectory, "Seed", "events.json"));
+            // Seed events
+            var collection = database.GetCollection<BsonDocument>("events");
+            var data = File.ReadAllText(Path.Join(AppDomain.CurrentDomain.BaseDirectory, "Seed", $"{dbConfig.DatabaseName}.events.json"));
             var documents = BsonSerializer.Deserialize<BsonDocument[]>(data);
+
+            collection.InsertMany(documents);
+
+            // Seed items
+            collection = database.GetCollection<BsonDocument>("items");
+            data = File.ReadAllText(Path.Join(AppDomain.CurrentDomain.BaseDirectory, "Seed", $"{dbConfig.DatabaseName}.items.json"));
+            documents = BsonSerializer.Deserialize<BsonDocument[]>(data);
 
             collection.InsertMany(documents);
         }

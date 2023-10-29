@@ -1,0 +1,2026 @@
+[{
+  "_id": "Elektronikai eszköz",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Műszaki cikk"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Háztartási eszköz",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Műszaki cikk"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Kozmetikai termék",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Szépségápolás",
+	  "Egészség",
+	  "Kozmetikum"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Könyv",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Ajándéktárgy"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Ruha",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Divat/ruházat"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Ékszer",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Ajándéktárgy"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Kézműves termék",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Hobbi",
+	  "Kreatív hobbi"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Dísztárgy",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Ajándéktárgy"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Édesség",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Étel/ital"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Különleges étel",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Étel/ital"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Ital",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Étel/ital"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Kerékpár",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Sport/fitness",
+	  "Autó/motor"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Cipő",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Divat/ruházat",
+	  "Sport/fitness"
+	  "Lábbeli"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Parfüm",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Szépségápolás",
+	  "Ajándéktárgy"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Játék",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+      "Hobbi"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Hangszer",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+      "Hobbi"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Bútor/berendezési tárgy",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Kalandpark belépő",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Élmény/utazás",
+      "Szabadidő",
+	  "Kaland",
+	  "Adrenalin"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "VR élmény",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Élmény/utazás",
+	  "Szabadidő"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Szabadulószoba",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Élmény/utazás",
+	  "Szabadidő",
+	  "Adrenalin"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Fal-/sziklamászás",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Élmény/utazás",
+	  "Kaland",
+	  "Adrenalin",
+	  "Szabadidő"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Paintball",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Élmény/utazás",
+	  "Kaland",
+	  "Adrenalin",
+	  "Szabadidő"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Színház/opera előadás",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Élmény/utazás",
+	  "Kultúra",
+	  "Szabadidő"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Mozi",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Élmény/utazás",
+	  "Kultúra",
+	  "Szabadidő"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Koncert",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Élmény/utazás",
+	  "Kultúra",
+	  "Szabadidő"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Wellness",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Élmény/utazás",
+	  "Szabadidő",
+	  "Üdülés"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Gasztronómia",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Élmény/utazás"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Üdülés",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Élmény/utazás"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Pénztárca",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Divat/ruházat"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Fülbevaló",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Ékszer",
+	  "Ajándéktárgy"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Gyűrű",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Ékszer",
+	  "Ajándéktárgy"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Karkötő",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Ékszer",
+	  "Ajándéktárgy"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Kitűző",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Ékszer",
+	  "Ajándéktárgy"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Nyaklánc",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Ékszer",
+	  "Ajándéktárgy"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Vízipipa",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Dohányzás kellék",
+	  "Ajándéktárgy"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Öngyújtó",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Dohányzás kellék",
+	  "Ajándéktárgy"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Cigaretta tárca",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Dohányzás kellék",
+	  "Ajándéktárgy"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Gyertya/mécses",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Relaxáció",
+	  "Ajándéktárgy"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Illóolaj",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Relaxáció",
+	  "Ajándéktárgy"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Füstölő",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Relaxáció",
+	  "Ajándéktárgy"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Autóalkatrész",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Autó/motor"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Autó kellék",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Autó/motor"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Motorkerékpár alkatrész",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Autó/motor"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Motoros kiegészítő",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Autó/motor"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Motoros ruházat",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Autó/motor",
+	  "Divat/ruházat"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Babajáték",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Baba, mama"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Kismamaruházat",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Baba, mama",
+	  "Divat/ruházat"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Babakocsi",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Baba, mama"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Babaruházat",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Baba, mama",
+	  "Divat/ruházat"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Cipősszekrény",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Bútor/berendezési tárgy",
+	  "Előszobabútor"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Gyerekágy",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Bútor/berendezési tárgy",
+	  "Gyerekbútor"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Játéktároló",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Bútor/berendezési tárgy",
+	  "Gyerekbútor"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Ágy/ágykeret",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Bútor/berendezési tárgy",
+	  "Hálószoba bútor"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Matrac",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Bútor/berendezési tárgy",
+	  "Hálószoba bútor"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Éjjeliszekrény",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Bútor/berendezési tárgy",
+	  "Hálószoba bútor"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Ruhásszekrény",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Bútor/berendezési tárgy",
+	  "Hálószoba bútor"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Kanapé",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Bútor/berendezési tárgy",
+	  "Kárpitozott bútor"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Ülőgarnitúra",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Bútor/berendezési tárgy",
+	  "Kárpitozott bútor"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Függőágy",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Bútor/berendezési tárgy",
+	  "Kerti bútor"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Kerti asztal",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Bútor/berendezési tárgy",
+	  "Kerti bútor"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Napozóágy",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Bútor/berendezési tárgy",
+	  "Kerti bútor"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Napernyő",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Bútor/berendezési tárgy",
+	  "Kerti bútor"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Kerti szék",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Bútor/berendezési tárgy",
+	  "Kerti bútor"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Bárpult",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Bútor/berendezési tárgy",
+	  "Kiegészítő bútor"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Bárszék",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Bútor/berendezési tárgy",
+	  "Kiegészítő bútor"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Étkezőasztal",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Bútor/berendezési tárgy",
+	  "Konyhabútor"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Konyhai munkalap",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Bútor/berendezési tárgy",
+	  "Konyhabútor"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Tálalószekrény",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Bútor/berendezési tárgy",
+	  "Konyhabútor"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Ágyneműhuzat",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Bútor/berendezési tárgy",
+	  "Lakástextil"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Asztalterítő",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Bútor/berendezési tárgy",
+	  "Lakástextil"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Díszpárna",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Bútor/berendezési tárgy",
+	  "Lakástextil"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Fedőmatrac",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Bútor/berendezési tárgy",
+	  "Lakástextil"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Függöny",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Bútor/berendezési tárgy",
+	  "Lakástextil"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Lábtörlő",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Bútor/berendezési tárgy",
+	  "Lakástextil"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Paplan",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Bútor/berendezési tárgy",
+	  "Lakástextil"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Párna",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Bútor/berendezési tárgy",
+	  "Lakástextil"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Szőnyeg",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Bútor/berendezési tárgy",
+	  "Lakástextil"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "CD/DVD állvány",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Bútor/berendezési tárgy",
+	  "Nappali szoba bútor"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Konzolasztal",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Bútor/berendezési tárgy",
+	  "Nappali szoba bútor"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "TV szekrény",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Bútor/berendezési tárgy",
+	  "Nappali szoba bútor"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Dzseki",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Divat/ruházat"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Farmernadrág",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Divat/ruházat"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Ing",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Divat/ruházat"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Kabát",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Divat/ruházat"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Melegítőnadrág",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Divat/ruházat"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Fehérnemű",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Divat/ruházat"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Zokni",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Divat/ruházat"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Papucs",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Divat/ruházat",
+	  "Lábbeli"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Blúz",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Divat/ruházat"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Fürdőruha",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Divat/ruházat"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Estélyi ruha",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Divat/ruházat"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Kardigán",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Divat/ruházat"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Póló",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Divat/ruházat"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Női ruha",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Divat/ruházat"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Szoknya",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Divat/ruházat"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Harisnya",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Divat/ruházat"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Aktatáska",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Divat/ruházat",
+	  "Ruházat kiegészítő"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Bőrönd",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Divat/ruházat",
+	  "Ruházat kiegészítő"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Cipőfűző",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Divat/ruházat",
+	  "Ruházat kiegészítő"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Esernyő",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Divat/ruházat",
+	  "Ruházat kiegészítő"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Napszemüveg",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Divat/ruházat",
+	  "Ruházat kiegészítő"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Kalap",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Divat/ruházat",
+	  "Ruházat kiegészítő"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Kesztyű",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Divat/ruházat",
+	  "Ruházat kiegészítő"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Nyakkendő",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Divat/ruházat",
+	  "Ruházat kiegészítő"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Öv",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Divat/ruházat",
+	  "Ruházat kiegészítő"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Övtáska",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Divat/ruházat",
+	  "Ruházat kiegészítő"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Sál/kendő",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Divat/ruházat",
+	  "Ruházat kiegészítő"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Sapka",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Divat/ruházat",
+	  "Ruházat kiegészítő"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Bor",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Étel/ital",
+	  "Alkoholos ital"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Gin",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Étel/ital",
+	  "Alkoholos ital"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Likőr",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Étel/ital",
+	  "Alkoholos ital"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Pálinka",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Étel/ital",
+	  "Alkoholos ital"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Pezsgő",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Étel/ital",
+	  "Alkoholos ital"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Sör",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Étel/ital",
+	  "Alkoholos ital"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Whiskey",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Étel/ital",
+	  "Alkoholos ital"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Tea",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Étel/ital",
+	  "Üdítőital"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Csokoládé",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Étel/ital",
+	  "Édesség"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Desszert",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Étel/ital",
+	  "Édesség"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Film",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Film/zene"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Hangoskönyv",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Film/zene"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "LP/Zenei CD",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Film/zene"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Akusztikus zongora",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Hangszer",
+	  "Billentyű/zongora"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Harmonika",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Hangszer",
+	  "Billentyű/zongora"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Digitális zongora",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Hangszer",
+	  "Billentyű/zongora"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Akusztikus gitár",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Hangszer",
+	  "Pengetős hangszer"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Elektromos gitár",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Hangszer",
+	  "Pengetős hangszer"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Hangszerhúr",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Hangszer",
+	  "Pengetős hangszer",
+	  "Hangszer kiegészítő"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Aprító/mixer",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Háztartási gép",
+	  "Műszaki cikk",
+	  "Konyhai gép"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Autamata kávéfőző",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Háztartási gép",
+	  "Műszaki cikk",
+	  "Konyhai gép"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Kenyérpirító",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Háztartási gép",
+	  "Műszaki cikk",
+	  "Konyhai gép"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Biliárdasztal",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Hobbi"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Csocsó asztal",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Hobbi"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Póker szett",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Hobbi",
+	  "Kártyajáték"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Üvegfesték",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Hobbi",
+	  "Kreatív hobbi"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Tempera",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Hobbi",
+	  "Kreatív hobbi"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Makett",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Hobbi",
+	  "Modellezés"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "RC motor",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Hobbi",
+	  "Modellezés"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Varródoboz",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Hobbi",
+	  "Szabás/varrás"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Horgoló készlet",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Hobbi",
+	  "Szabás/varrás"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Játék autópálya",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Játék"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Játékvonat",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Játék"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Távirányítós játé",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Játék"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Játék fegyver",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Játék",
+	  "Fiú játék"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Betű-/számjáték",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Játék",
+	  "Készségfejlesztő játék"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Játékhangszer",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Játék",
+	  "Készségfejlesztő játék"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Logikai játék",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Játék",
+	  "Készségfejlesztő játék"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Tudományos-/ismeretterjesztő játék",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Játék",
+	  "Készségfejlesztő játék"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "LEGO",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Játék",
+	  "Konstrukciós játék"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Playmobil",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Játék",
+	  "Konstrukciós játék"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Babaház",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Játék",
+	  "Lány játék"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Barbie baba",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Játék",
+	  "Lány játék"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Fényképezőgép",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Műszaki cikk"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Világítástechnika",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Otthon/kert"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Sportruházat",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Sport/fitness",
+	  "Divat/ruházat"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Notebook",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Számítógép",
+	  "Műszaki cikk"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Számítógép kiegészítő",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Számítógép",
+	  "Műszaki cikk"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Tablet",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Számítógép",
+	  "Műszaki cikk"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Okosóra",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Számítógép",
+	  "Műszaki cikk",
+	  "Sport/fitness"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+},
+{
+  "_id": "Videójáték",
+  "dateProps": {},
+  "categoricalProps": {
+    "category": [
+      "Fizikai tárgy",
+	  "Számítógép"
+    ]
+  },
+  "floatProps": {},
+  "booleanProps": {}
+}]
