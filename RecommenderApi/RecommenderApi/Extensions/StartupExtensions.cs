@@ -8,6 +8,7 @@ using RecommenderApi.Services;
 using Serilog;
 using System.Reflection;
 using System.Text.Json.Serialization;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace RecommenderApi.Extensions
 {
@@ -64,17 +65,21 @@ namespace RecommenderApi.Extensions
 
             // Seed events
             var collection = database.GetCollection<BsonDocument>("events");
-            var data = File.ReadAllText(Path.Join(AppDomain.CurrentDomain.BaseDirectory, "Seed", $"{dbConfig.DatabaseName}.events.json"));
-            var documents = BsonSerializer.Deserialize<BsonDocument[]>(data);
-
-            collection.InsertMany(documents);
+            if (collection.CountDocuments(FilterDefinition<BsonDocument>.Empty) == 0)
+            {
+                var data = File.ReadAllText(Path.Join(AppDomain.CurrentDomain.BaseDirectory, "Seed", $"{dbConfig.DatabaseName}.events.json"));
+                var documents = BsonSerializer.Deserialize<BsonDocument[]>(data);
+                collection.InsertMany(documents);
+            }
 
             // Seed items
             collection = database.GetCollection<BsonDocument>("items");
-            data = File.ReadAllText(Path.Join(AppDomain.CurrentDomain.BaseDirectory, "Seed", $"{dbConfig.DatabaseName}.items.json"));
-            documents = BsonSerializer.Deserialize<BsonDocument[]>(data);
-
-            collection.InsertMany(documents);
+            if (collection.CountDocuments(FilterDefinition<BsonDocument>.Empty) == 0)
+            {
+                var data = File.ReadAllText(Path.Join(AppDomain.CurrentDomain.BaseDirectory, "Seed", $"{dbConfig.DatabaseName}.items.json"));
+                var documents = BsonSerializer.Deserialize<BsonDocument[]>(data);
+                collection.InsertMany(documents);
+            }
         }
 
         public static void ConfigureJson(this WebApplicationBuilder builder)
