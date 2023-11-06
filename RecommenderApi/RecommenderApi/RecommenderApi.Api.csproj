@@ -11,9 +11,13 @@
 
   <ItemGroup>
     <Compile Remove="Filter\**" />
+    <Compile Remove="Model\**" />
     <Content Remove="Filter\**" />
+    <Content Remove="Model\**" />
     <EmbeddedResource Remove="Filter\**" />
+    <EmbeddedResource Remove="Model\**" />
     <None Remove="Filter\**" />
+    <None Remove="Model\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -29,7 +33,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Model\" />
     <Folder Include="Profiles\" />
   </ItemGroup>
 

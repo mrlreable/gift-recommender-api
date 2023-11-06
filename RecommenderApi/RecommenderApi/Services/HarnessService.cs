@@ -21,13 +21,13 @@ namespace RecommenderApi.Services
             throw new NotImplementedException();
         }
 
-        public async Task<ICollection<RecommendationView>?> UserBasedQueryAsync(string userId)
+        public async Task<RecommendationView?> ItemBasedQueryAsync(string itemId)
         {
             var client = _httpClientFactory.CreateClient();
             var requestUri = "";
             var body = new
             {
-                UserId = userId,
+                Item = itemId,
             };
 
             var content = new StringContent(JsonSerializer.Serialize(body), Encoding.UTF8, "application/json");
@@ -37,7 +37,45 @@ namespace RecommenderApi.Services
 
             var stringRecommendations = await response.Content.ReadAsStringAsync();
 
-            return JsonSerializer.Deserialize<ICollection<RecommendationView>?>(stringRecommendations);
+            return JsonSerializer.Deserialize<RecommendationView?>(stringRecommendations);
+        }
+
+        public async Task<RecommendationView?> ItemSetBasedQueryAsync(string[] items)
+        {
+            var client = _httpClientFactory.CreateClient();
+            var requestUri = "";
+            var body = new
+            {
+                ItemSet = items,
+            };
+
+            var content = new StringContent(JsonSerializer.Serialize(body), Encoding.UTF8, "application/json");
+            var response = await client.PostAsync(requestUri, content);
+
+            response.EnsureSuccessStatusCode();
+
+            var stringRecommendations = await response.Content.ReadAsStringAsync();
+
+            return JsonSerializer.Deserialize<RecommendationView?>(stringRecommendations);
+        }
+
+        public async Task<RecommendationView?> UserBasedQueryAsync(string userId)
+        {
+            var client = _httpClientFactory.CreateClient();
+            var requestUri = "";
+            var body = new
+            {
+                User = userId,
+            };
+
+            var content = new StringContent(JsonSerializer.Serialize(body), Encoding.UTF8, "application/json");
+            var response = await client.PostAsync(requestUri, content);
+
+            response.EnsureSuccessStatusCode();
+
+            var stringRecommendations = await response.Content.ReadAsStringAsync();
+
+            return JsonSerializer.Deserialize<RecommendationView?>(stringRecommendations);
         }
     }
 }

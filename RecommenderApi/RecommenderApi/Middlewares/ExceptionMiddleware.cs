@@ -78,6 +78,10 @@ namespace RecommenderApi.Middlewares
                     code = HttpStatusCode.Conflict;
                     name = ErrorType.Conflict.ToString();
                     break;
+                case BadHttpRequestException:
+                    code = HttpStatusCode.BadRequest;
+                    name = ErrorType.BadRequest.ToString();
+                    break;
                 default:
                     code = HttpStatusCode.InternalServerError;
                     name = ErrorType.Internal.ToString();

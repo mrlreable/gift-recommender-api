@@ -40,7 +40,7 @@ namespace RecommenderApi.Controllers
             return Results.Ok();
         }
 
-        [HttpGet("query/{userId}")]
+        [HttpGet("query/user/{userId}")]
         public async Task<IResult> GetUserBasedRecommendations([FromRoute] string userId)
         {
             if (string.IsNullOrWhiteSpace(userId))
@@ -51,6 +51,24 @@ namespace RecommenderApi.Controllers
             var result = await _harnessService.UserBasedQueryAsync(userId);
 
             return Results.Ok(result);
+        }
+
+        [HttpGet("query/item")]
+        public async Task<IResult> GetItemBasedRecommendations([FromQuery] string[] itemId)
+        {
+            if (itemId is null)
+            {
+                throw new ValidationException($"Query parameter {nameof(itemId)} cannot be empty");
+            }
+
+            if (itemId.Length == 1)
+            {
+                var result = await _harnessService.ItemBasedQueryAsync(itemId[0]);
+                return Results.Ok(result);
+            }
+
+            var itemsResult = await _harnessService.ItemSetBasedQueryAsync(itemId);
+            return Results.Ok(itemsResult);
         }
     }
 }

@@ -2,7 +2,7 @@
 {
     public class UrInputDto
     {
-        public int UserId { get; set; }
+        public string UserId { get; set; }
         public string? Sex { get; set; }
         public string? Education { get; set; }
         public string? PersonalityType { get; set; }
