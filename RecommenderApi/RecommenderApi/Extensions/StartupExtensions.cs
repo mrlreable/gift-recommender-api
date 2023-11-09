@@ -6,9 +6,7 @@ using RecommenderApi.Options;
 using RecommenderApi.Options.Validators;
 using RecommenderApi.Services;
 using Serilog;
-using System.Reflection;
 using System.Text.Json.Serialization;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace RecommenderApi.Extensions
 {
@@ -23,6 +21,12 @@ namespace RecommenderApi.Extensions
                 .CreateLogger();
 
             builder.Logging.AddSerilog(logger);
+        }
+
+        public static void ConfigureMapster(this WebApplicationBuilder builder)
+        {
+            // TODO: add TypeAdapterConfig for mapster
+
         }
 
         public static void ConfigureDatabase(this WebApplicationBuilder builder)

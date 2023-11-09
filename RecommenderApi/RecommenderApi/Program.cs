@@ -11,6 +11,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
 builder.RegisterServices();
+builder.ConfigureMapster();
 builder.Services.AddHttpClient();
 
 // Health checks

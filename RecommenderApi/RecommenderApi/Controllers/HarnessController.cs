@@ -34,8 +34,7 @@ namespace RecommenderApi.Controllers
         {
             await _validator.ValidateAndThrowAsync(dto);
 
-            // TODO
-            throw new NotImplementedException();
+            var result = await _harnessService.GenerateHarnessInputAsync(dto);
 
             return Results.Ok();
         }
