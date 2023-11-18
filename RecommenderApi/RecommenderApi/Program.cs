@@ -3,16 +3,13 @@ using RecommenderApi.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
-builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddControllers();
 builder.RegisterServices();
 builder.ConfigureMapster();
 builder.Services.AddHttpClient();
+builder.Services.AddControllers();
 
 // Health checks
 builder.HealthCheck();
@@ -34,9 +31,8 @@ if (app.Environment.IsDevelopment())
 }
 
 // Disable for now
-//app.UseHttpsRedirection();
-
-app.UseAuthorization();
+app.UseHttpsRedirection();
 app.UseMiddleware<ExceptionMiddleware>();
+app.MapControllers();
 
 app.Run();

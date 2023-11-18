@@ -1,4 +1,6 @@
-﻿namespace RecommenderApi.Api.Dtos
+﻿using System.Text.Json.Serialization;
+
+namespace RecommenderApi.Api.Dtos
 {
     /// <summary>
     /// Input for Harness server event endpoint POST /engines/<engine-id>/events
@@ -10,21 +12,31 @@
         /// Name of the event that is defined in the UR engine configuration. The value must be one of the "name"s in
         /// the "indicators" array from the UR engine's JSON config.
         /// </summary>
+        [JsonPropertyName("event")]
         public string Event { get; set; }
 
         /// <summary>
         /// The entity for which the recommendation should be given. This is always "user", do not use any other type for indicators.
         /// </summary>
+        [JsonPropertyName("entityType")]
         public string EntityType { get; set; }
+
+        /// <summary>
+        /// Id of the user
+        /// </summary>
+        [JsonPropertyName("entityId")]
+        public string EntityId { get; set; }
 
         /// <summary>
         /// This is always "item", do not use any other type for indicators.
         /// </summary>
+        [JsonPropertyName("targetEntityType")]
         public string TargetEntityType { get; set; }
 
         /// <summary>
         /// Id/Name of the item that should be given as recommendation.
         /// </summary>
+        [JsonPropertyName("targetEntityId")]
         public string TargetEntityId { get; set; }
 
         /// <summary>
@@ -33,7 +45,8 @@
         /// datetime is not supported since the Harness and the UR can accept events from all over the globe and so the datetimes must
         /// be applicable to anywhere.
         /// </summary>
-        public DateTime EventTime { get; set; }
+        [JsonPropertyName("eventTime")]
+        public string EventTime { get; set; }
     }
 
     public class HarnessSetPropertyRequest

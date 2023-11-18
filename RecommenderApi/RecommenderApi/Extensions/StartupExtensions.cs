@@ -2,9 +2,11 @@
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization;
 using MongoDB.Driver;
+using RecommenderApi.Dtos;
 using RecommenderApi.Options;
 using RecommenderApi.Options.Validators;
 using RecommenderApi.Services;
+using RecommenderApi.Validation;
 using Serilog;
 using System.Text.Json.Serialization;
 
@@ -54,6 +56,7 @@ namespace RecommenderApi.Extensions
         public static void RegisterServices(this WebApplicationBuilder builder)
         {
             builder.Services.AddScoped<IHarnessService, HarnessService>();
+            builder.Services.AddScoped<IValidator<UrInputDto>, UrInputValidator>();
         }
 
         public static void HealthCheck(this WebApplicationBuilder builder)

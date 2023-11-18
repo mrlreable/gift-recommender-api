@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Mvc;
 using RecommenderApi.Dtos;
 using RecommenderApi.Services;
-using RecommenderApi.Validation;
 
 namespace RecommenderApi.Controllers
 {
@@ -11,11 +10,11 @@ namespace RecommenderApi.Controllers
     public class HarnessController : ControllerBase
     {
         private readonly IConfiguration _configuration;
-        private readonly ILogger _logger;
+        private readonly ILogger<HarnessController> _logger;
         private readonly IHarnessService _harnessService;
         private readonly IValidator<UrInputDto> _validator;
 
-        public HarnessController(IConfiguration configuration, ILogger logger, IHarnessService harnessService, IValidator<UrInputDto> validator)
+        public HarnessController(IConfiguration configuration, ILogger<HarnessController> logger, IHarnessService harnessService, IValidator<UrInputDto> validator)
         {
             _configuration = configuration ?? throw new ArgumentNullException(nameof(configuration));
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
@@ -36,7 +35,7 @@ namespace RecommenderApi.Controllers
 
             var result = await _harnessService.GenerateHarnessInputAsync(dto);
 
-            return Results.Ok();
+            return Results.Ok(result);
         }
 
         [HttpGet("query/user/{userId}")]
@@ -68,6 +67,14 @@ namespace RecommenderApi.Controllers
 
             var itemsResult = await _harnessService.ItemSetBasedQueryAsync(itemId);
             return Results.Ok(itemsResult);
+        }
+    }
+
+    public class MultiStatus : IResult
+    {
+        public Task ExecuteAsync(HttpContext httpContext)
+        {
+            throw new NotImplementedException();
         }
     }
 }
