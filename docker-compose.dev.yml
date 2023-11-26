@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-  
+    
   recommender-api:
     image: lanle99/gift-recommender-api:latest
     depends_on:
@@ -14,7 +14,7 @@ services:
       context: ./RecommenderApi
       dockerfile: RecommenderApi/Dockerfile
     environment:
-      - GiftRecommenderDatabase__ConnectionString=mongodb://+:27017
+      #- GiftRecommenderDatabase__ConnectionString=mongodb://+:27017
       - ASPNETCORE_URLS=http://+:80
   
   harness:
