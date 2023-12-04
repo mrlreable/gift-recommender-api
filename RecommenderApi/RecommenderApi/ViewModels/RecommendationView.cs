@@ -2,10 +2,10 @@
 {
     public class RecommendationView
     {
-        public Result[] Result { get; set; }
+        public List<ResultItem> Result { get; set; }
     }
 
-    public class Result
+    public class ResultItem
     {
         public string Item { get; set; }
         public double Score { get; set; }
