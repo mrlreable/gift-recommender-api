@@ -93,5 +93,19 @@ namespace RecommenderApi.Extensions
                 options.SerializerOptions.Converters.Add(new JsonStringEnumConverter());
             });
         }
+
+        public static void ConfigureCors(this WebApplicationBuilder builder)
+        {
+            string[] origins = builder.Configuration["AllowedHosts"].Split(';')
+          .Select(origin => origin.Trim()).ToArray();
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy",
+                    builder => builder.WithOrigins(origins)
+                        .AllowAnyMethod()
+                        .AllowAnyHeader()
+                        .AllowCredentials());
+            });
+        }
     }
 }
